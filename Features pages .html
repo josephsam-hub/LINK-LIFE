@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK LIFE, ANYWHERE ANYTIME</title>
+    <link rel="icon" href=".vscode/blood-donation.png" width="35" height="35">
+    <link rel="stylesheet" href="about us.css">
+    <script defer src="script1.js"></script>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333;">
+
+    <!-- HEADER -->
+    <header style="background-color: #b30000; color: white; padding: 10px 20px;">
+        <div class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src=".vscode/blood-donation.png" alt="LINK LIFE" width="70" height="70" style="margin-right: 15px;">
+                <h2 style="margin: 0;">LINK LIFE</h2>
+            </div>
+            <nav>
+                <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+                    <li><a href="home 2 pages sample.html" style="color: white; text-decoration: none;">HOME</a></li>
+                    <li><a href="Aboutus page.html" style="color: white; text-decoration: none;">ABOUT US</a></li>
+                    <li><a href="service page.html" style="color: white; text-decoration: none;">FAQ</a></li>
+                    <li><a href="Features pages .html" style="color: white; text-decoration: none;">Feedback</a></li>
+                    <li><a href="contact us page.html" style="color: white; text-decoration: none;">CONTACT US</a></li>
+                    <li><a href="signup page.html" style="color: white; text-decoration: none;">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('features')">FEATURES</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('gamification')">GAMIFICATION</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('emergency')">EMERGENCY NOTIFICATION</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('ai-health')">AI-PERSONALIZED HEALTH TIPS</a></li>
+            </ul>
+        </aside>
+        
+        <section id="features" class="content-section active">
+            <h1>FEATURES</h1>
+            <ul>
+              <li>Gamification for Blood Donation Awareness</li>
+              <li>Emergency Notification System</li>
+              <li>AI-Powered Personalized Health Tips</li>
+              <li>Blood Bank Locator</li>
+              <li>Donation History & Rewards System</li>
+            </ul>
+          </section>
+      
+          <!-- Gamification Section -->
+          <section id="gamification" class="content-section">
+            <h1>Gamification: Learn While You Save Lives!</h1>
+            <img src="https://sciencetrek.org/uploads/assets/game/Blood/_350xAUTO_fit_center-center_none/Are-You-A-Blood-Expert.jpg" alt="Blood Quiz" width="300" />
+            <h2>Blood Donation Quiz Game</h2>
+            <p>Test your knowledge about blood donation and win badges!</p>
+            <a href="https://educationgames.nobelprize.org/educational/medicine/bloodtypinggame/gamev3/index.html" target="_blank">
+              <button style="background-color: #b30000; color: white; padding: 10px 20px; border: none; cursor: pointer;">PLAY NOW</button>
+            </a>
+          </section>
+      
+          <!-- Emergency Notification System -->
+          <section id="emergency" class="content-section">
+            <h1>Emergency Notification System</h1>
+            <img src="https://friends2support.org/imgs/blood_1.jpg" alt="Emergency Alert" width="300" />
+            <p>Our AI-powered emergency notification system ensures that donors and recipients are alerted instantly during urgent situations.</p>
+            <H1>Emergency Notification System (ENS): Key Features and Supporting Software</H1>
+            <li>An effective Emergency Notification System (ENS) sends out critical alerts to individuals or groups during urgent situations, such as natural disasters, medical emergencies, or safety threats.</li>
+            <H1 style="text-align: center;">Key Features of an ENS:</H1>
+            <li>Multi-Channel Communication</li> 
+            <li>Geolocation and Targeted Alerts</li> 
+            <li>Real-Time Updates and Two-Way Communication</li>
+            <li>AI-Powered Predictive Analytics</li>
+            <H1>AI-Powered Software Behind ENS</H1>
+            <LI>IBM Watson Emergency Manager</LI>
+            <LI>Everbridge</LI>
+            <LI>Google Public Alerts</LI>
+        </ul>
+
+          </section>
+      
+          <!-- AI Health Tips -->
+          <section id="ai-health" class="content-section">
+            <h1>AI-Powered Personalized Health Tips</h1>
+            <img src="https://friends2support.org/imgs/blood_3.jpg" alt="AI Health Tips" width="300" />
+            <p>Our AI-driven system provides tailored health recommendations before and after donation.</p>
+      
+            <h2>Pre-Donation Preparation</h2>
+            <ul>
+              <li>Hydration Tracking</li>
+              <li>Iron Level Monitoring</li>
+              <li>Sleep Recommendations</li>
+            </ul>
+      
+            <h2>Day of Donation Tips</h2>
+            <ul>
+              <li>Food Intake Guidance</li>
+              <li>Relaxation Techniques</li>
+            </ul>
+      
+            <h2>Post-Donation Recovery</h2>
+            <ul>
+              <li>Iron and Hydration Monitoring</li>
+              <li>Activity Recommendations</li>
+            </ul>
+          </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="Forgot the passsword .html">Forgot Password?</a>
+            <a href="inviteFriends.html">Invite Friends</a>
+            <a href="find blood .html">Post Blood Request</a>
+            <a href="contact us page.html">Contact Us</a>
+        </div>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Link Life</title>
+    <link rel="icon" href="/mnt/data/cropped_logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        header {
+            background-color: #d9534f;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            width: 80px;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .profile-section {
+            padding: 20px;
+        }
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #d9534f;
+        }
+        .profile-details input, .profile-details textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .update-btn {
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .update-btn:hover {
+            background-color: #c9302c;
+        }
+        footer {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/mnt/data/cropped_logo.png" alt="Link Life Logo">
+            <h2>Link Life</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home 2 pages sample.html">HOME</a></li>
+                <li><a href="Aboutus page.html">ABOUT US</a></li>
+                <li><a href="service page.html">SERVICES</a></li>
+                <li><a href="Features pages .html">FEATURES</a></li>
+                <li><a href="contact us page.html">CONTACT US</a></li>
+                <li><a href="login page  .html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2>User Profile</h2>
+            <div class="profile-container">
+                <div class="profile-picture">
+                    <img src="profile-placeholder.jpg" alt="Profile Picture" id="profilePic">
+                    <input type="file" id="fileUpload" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                    <button class="update-btn" onclick="document.getElementById('fileUpload').click()">Change Picture</button>
+                </div>
+                <div class="profile-details">
+                    <form>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" placeholder="123 Main St, City, Country" required></textarea>
+                        <button type="button" class="update-btn" onclick="updateProfile()">Update Profile</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.facebook.com" target="_blank" style="color: white;">FACEBOOK</a>
+            <a href="https://www.instagram.com" target="_blank" style="color: white;">INSTAGRAM</a>
+        </div>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function(){
+                const output = document.getElementById('profilePic');
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+        function updateProfile() {
+            alert("Your profile has been updated successfully!");
+        }
+    </script>
+</body>
+</html>

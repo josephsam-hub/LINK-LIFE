@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Friends - Link Life</title>
+    <link rel="stylesheet" href="invite friends.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Link Life</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home page 2.html">HOME</a></li>
+                    <li><a href="Aboutus page.html">ABOUT US</a></li>
+                    <li><a href="service page.html">SERVICES</a></li>
+                    <li><a href="Features pages .html">FEATURES</a></li>
+                    <li><a href="contact us page.html">CONTACT US</a></li>
+                    <li><a href="signup page.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="invite-section">
+            <h2>Invite Friends to Join Link Life</h2>
+            <p>Invite your friends to become part of Link Life and help save lives by sharing the power of blood donation.</p>
+            
+            <div class="invite-container">
+                <form action="send-invite.php" method="POST">
+                    <label for="friendName">Friend's Full Name</label>
+                    <input type="text" id="friendName" name="friendName" placeholder="Enter friend's full name" required>
+
+                    <label for="friendEmail">Friend's Email Address</label>
+                    <input type="email" id="friendEmail" name="friendEmail" placeholder="Enter friend's email" required>
+
+                    <label for="message">Personalized Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write a personal message (optional)"></textarea>
+
+                    <button type="submit" onclick="showPopup()">Send Invitation</button>
+                    <script>
+                        function showPopup() {
+                            alert("INVITATION SENT...");
+                        }
+                    </script>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media" style="font-size: smaller;">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">FACEBOOK</a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">INSTAGRAM</a>
+        </div>
+        <marquee dir="ltr">
+            <div class="footer-links">
+                <a href="Forgot the passsword .html">Forgot Password?</a>
+                <a href="invite a friend.html">Invite Friends</a>
+                <a href="find blood .html">Post Blood Request</a>
+                <a href="contact us page.html">Contact Us</a>
+            </div>
+        </marquee>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="icon" href=".vscode/blood-donation.png" width="35" height="35">
+</head>
+<body style="
+  font-family: Arial, sans-serif;
+  background: url('https://source.unsplash.com/featured/?technology,login') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+">
+  <div style="
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  ">
+    <h1 style="text-align: center; color: #333;">Login</h1>
+
+    <form action="login.php" method="post">
+      <label for="username" style="display: block; margin: 15px 0 5px;">Username:</label>
+      <input type="text" id="username" name="username" required style="
+        width: 100%; padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "/>
+
+      <label for="password" style="display: block; margin: 15px 0 5px;">Password:</label>
+      <input type="password" id="password" name="password" required style="
+        width: 100%; padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "/>
+
+      <button type="submit" style="
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #007BFF;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      ">Login</button>
+    </form>
+
+    <div style="text-align: center; margin: 20px 0;">
+      <p style="color: #666;">or login with</p>
+
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #DB4437;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-bottom: 10px;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" style="height: 20px;"/>
+        Continue with Google
+      </a>
+
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #3b5998;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-bottom: 10px;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" style="height: 20px;"/>
+        Continue with Facebook
+      </a>
+
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 20px;"/>
+        Continue with GitHub
+      </a>
+    </div>
+
+    <p style="text-align: center; margin: 15px 0;">
+      <a href="Forgot the passsword .html" style="color: #007BFF; text-decoration: none;">Forgot Password?</a>
+    </p>
+    <p style="text-align: center;">
+      <a href="signup page.html" style="color: #28a745; text-decoration: none;">Don't have an account? Sign Up</a>
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINK LIFE, ANYWHERE ANYTIME</title>
+    <link rel="icon" href=".vscode/blood-donation.png" width="35" height="35">
+    <link rel="stylesheet" href="Service.css">
+    <script src="script1.js"></script>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333;">
+
+    <!-- HEADER -->
+    <header style="background-color: #b30000; color: white; padding: 10px 20px;">
+        <div class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src=".vscode/blood-donation.png" alt="LINK LIFE" width="70" height="70" style="margin-right: 15px;">
+                <h2 style="margin: 0;">LINK LIFE</h2>
+            </div>
+            <nav>
+                <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+                    <li><a href="home 2 pages sample.html" style="color: white; text-decoration: none;">HOME</a></li>
+                    <li><a href="Aboutus page.html" style="color: white; text-decoration: none;">ABOUT US</a></li>
+                    <li><a href="service page.html" style="color: white; text-decoration: none;">SERVICES</a></li>
+                    <li><a href="Features pages .html" style="color: white; text-decoration: none;">FEATURES</a></li>
+                    <li><a href="contact us page.html" style="color: white; text-decoration: none;">CONTACT US</a></li>
+                    <li><a href="signup page.html" style="color: white; text-decoration: none;">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">SERVICES</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('vision')">FIND Donation Campaign</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('facts')">FIND DOCTOR</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('whoCanDonate')">AI BLOOD FINDER</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('notifications')">Notifications</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('bloodBank')">Find Blood Bank</a></li>
+            </ul>
+        </aside>
+        
+        <section id="about" class="content-section active">
+            <h1>OUR SERVICES</h1>
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="https://cdn.pixabay.com/photo/2020/06/10/12/47/doctor-5282547_1280.jpg" alt="Find Doctor">
+                    <h2>Find a Doctor</h2>
+                    <p>Connect with specialized doctors based on expertise, location, and availability.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.freepik.com/free-vector/online-medicine-composition-with-human-character-patient-with-spots-health-checkup-results_1284-54423.jpg?t=st=1743794734~exp=1743798334~hmac=2685400ba0bdd6f16036423fb3a2511a0a1352fd702a555df73c3174834ca060&w=740" alt="Find Blood">
+                    <h2>Health Recommendations </h2>
+                    <p>AI can analyze donor health data from pre-donation screenings, wearable devices, and donation history to provide tailored health insights and recommendations .</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/12/31/06/47/ambulance-9301630_1280.jpg" alt="Find Oxygen">
+                    <h2> Route Optimization</h2>
+                    <p>Google Maps API to track the live location and fastest and shortest delivery routes.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2528875849/display_1500/stock-vector-ai-humanoid-finger-presses-on-a-light-white-ai-chip-or-processor-future-cybernetic-artificial-2528875849.jpg" alt="AI Blood Finder">
+                    <h2>AI Blood Finder</h2>
+                    <p>Our AI-powered system helps in locating blood donors efficiently.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.freepik.com/free-photo/friendly-hospital-phlebotomist-collecting-blood-sample-from-patient-lab-preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room_657921-879.jpg?t=st=1743794827~exp=1743798427~hmac=9a30458bea6a7756362b7986e78d62025974ae5a80426832c29c44719b4cd8f0&w=996" alt="Blood Campaign">
+                    <h2>Find Blood Campaign</h2>
+                    <p>Discover and participate in nearby blood donation camps.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.freepik.com/free-vector/donor-banners-set_1284-4380.jpg?uid=R164798148&ga=GA1.1.841111915.1743794249&semt=ais_hybrid&w=740" alt="Find Blood Bank">
+                    <h2>Find Blood Bank</h2>
+                    <p>Locate nearby blood banks to access life-saving blood units.</p>
+                </div>
+            </div>
+        
+            <style>
+                .services-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 20px;
+                }
+                .service-item {
+                    background: #fff;
+                    padding: 15px;
+                    width: 300px;
+                    text-align: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                }
+                .service-item img {
+                    width: 100%;
+                    height: 180px;
+                    border-radius: 5px;
+                }
+                .service-item h2 {
+                    color: #d9534f;
+                    margin-top: 10px;
+                }
+                .service-item p {
+                    color: #333;
+                    font-size: 14px;
+                }
+            </style>
+        </section>
+        
+        <section id="vision" class="content-section">
+            <h2>FIND BLOOD</h2>
+            <h1 style="text-align: left;">
+                <img src="https://friends2support.org/imgs/blood_1.jpg" width="400">
+            </h1> 
+        
+            <div class="search-box">
+                <input type="text" placeholder="Enter blood type or location" id="searchInput"><br>
+                <center><button onclick="searchBlood()" class="btn">Find Blood</button></center>
+            </div>
+        
+            <div id="bloodCampaigns" class="campaign-container">
+                <h3>Nearby Blood Donation Camps</h3>
+                <div class="campaign-item">
+                    <img src="campaign1.jpg" alt="Blood Donation Camp" class="campaign-img">
+                    <p><strong>Chennai Blood Camp</strong><br>Location: Red Cross Society, Chennai<br>Date: April 10, 2025</p>
+                </div>
+                <div class="campaign-item">
+                    <img src="campaign2.jpg" alt="Blood Donation Camp" class="campaign-img">
+                    <p><strong>Coimbatore Blood Drive</strong><br>Location: City Hospital, Coimbatore<br>Date: April 12, 2025</p>
+                </div>
+            </div>
+        
+            <style>
+                .campaign-container {
+                    margin-top: 20px;
+                    background: #fff;
+                    padding: 15px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                }
+                .campaign-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                .campaign-img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 5px;
+                    margin-right: 15px;
+                }
+                .campaign-item p {
+                    font-size: 14px;
+                    color: #333;
+                }
+            </style>
+        </section>
+        <section id="bloodDonation" class="content-section">      
+                         <style>
+                              .fact-box, .compatibility-table {
+                                  background-color: #fff;
+                                  padding: 20px;
+                                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                  border-radius: 8px;
+                                  flex: 1;
+                                  max-width: 450px;
+                              }
+                      
+                              h1 {
+                                  color: #d9534f;
+                              }
+                      
+                              .fact-box img {
+                                  max-width: 100%;
+                                  height: auto;
+                                  border-radius: 8px;
+                              }
+                      
+                              blockquote {
+                                  font-style: italic;
+                                  color: #555;
+                                  margin: 15px 0;
+                              }
+                      
+                              .btn {
+                                  padding: 10px 20px;
+                                  background-color: #d9534f;
+                                  color: #fff;
+                                  border: none;
+                                  border-radius: 5px;
+                                  font-size: 1rem;
+                                  cursor: pointer;
+                                  transition: background-color 0.3s;
+                              }
+                      
+                              .btn:hover {
+                                  background-color: #c9302c;
+                              }
+                      
+                              /* Table styles */
+                              .compatibility-table table {
+                                  width: 100%;
+                                  border-collapse: collapse;
+                                  margin-top: 15px;
+                              }
+                      
+                              .compatibility-table th, .compatibility-table td {
+                                  padding: 10px;
+                                  border: 1px solid #ddd;
+                                  font-size: 1rem;
+                              }
+                      
+                              .compatibility-table th {
+                                  background-color: #d9534f;
+                                  color: #fff;
+                                  font-weight: bold;
+                              }
+                      
+                              .compatibility-table td {
+                                  color: #961e1b;
+                                  font-weight: bold;
+                              }
+                          </style>
+                        </section>
+        <section id="facts" class="content-section">
+            <h2>Find Doctor</h2>
+            <p>Search for doctors specializing in blood-related disorders.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Enter specialty or location" id="doctorInput">
+                <button onclick="searchDoctor()" class="btn">Find Doctor</button>
+            </div>
+            <div id="doctorResults">
+                <p>Enter details to find a suitable doctor.</p>
+            </div>
+            <script>
+                function searchDoctor() {
+                    const query = document.getElementById("doctorInput").value.trim();
+                    if (query === "") {
+                        alert("Please enter specialty or location.");
+                        return;
+                    }
+                    
+                    const doctorList = {
+                        "Oncologist": ["Dr.Harshan - Madurai", "Dr.Kanika - Erode"],
+                        "Transfusion Medicine Specialist": ["Dr.Parimala - Salem", "Dr.keerthanashri - Tirupur"],
+                        "Vascular Surgeon": ["Dr. Arun - coimbatore", "Dr.Joe - Tirunelveli"],
+                        "Immunologist": ["Dr. Rajesh Verma - Pune", "Dr. Kavita Menon - Jaipur"]
+                    };
+                    
+                    let resultsHTML = "<ul>";
+                    if (doctorList[query]) {
+                        doctorList[query].forEach(doctor => {
+                            resultsHTML += `<li>${doctor}</li>`;
+                        });
+                    } else {
+                        resultsHTML += "<li>No doctors found for this query.</li>";
+                    }
+                    resultsHTML += "</ul>";
+                    
+                    document.getElementById("doctorResults").innerHTML = resultsHTML;
+                }
+            </script>
+        </section>                  
+                <section id="whoCanDonate" class="content-section">
+                    <h2>AI BLOOD FINDER</h2>
+                    <p>Our AI-powered system helps find potential blood donors efficiently.</p>
+                    <div class="search-box">
+                        <input type="text" placeholder="Enter blood type or location" id="aiBloodInput">
+                        <button onclick="searchAIBloodFinder()" class="btn">Find Blood with AI</button>
+                    </div>
+                    <div id="aiBloodResults">
+                        <p>Enter details to get AI-assisted blood donor suggestions.</p>
+                    </div>
+                    <script>
+                        function searchAIBloodFinder() {
+                            const query = document.getElementById("aiBloodInput").value.trim();
+                            if (query === "") {
+                                alert("Please enter blood type or location.");
+                                return;
+                            }
+                            
+                            const aiDonorMatches = {
+                                "O+": ["John Doe - Chennai", "Amit Kumar - Coimbatore"],
+                                "A-": ["Priya Sharma - Madurai", "Rajesh Verma - Chennai"],
+                                "B+": ["Anita Reddy - Bangalore", "Vikram Singh - Hyderabad"]
+                            };
+                            
+                            let resultsHTML = "<ul>";
+                            if (aiDonorMatches[query]) {
+                                aiDonorMatches[query].forEach(donor => {
+                                    resultsHTML += `<li>${donor}</li>`;
+                                });
+                            } else {
+                                resultsHTML += "<li>No AI matches found for this query.</li>";
+                            }
+                            resultsHTML += "</ul>";
+                            
+                            document.getElementById("aiBloodResults").innerHTML = resultsHTML;
+                        }
+                    </script>
+                </section>
+        <section id="notifications" class="content-section">
+            <h2>Notifications</h2>
+            <div id="bloodRequests">
+                <p>Loading recent blood requests...</p>
+            </div>
+            <script>
+                function fetchBloodRequests() {
+                    const requests = [
+                        { location: "Chennai", bloodType: "O+", urgency: "High" },
+                        { location: "Coimbatore", bloodType: "A-", urgency: "Medium" },
+                        { location: "Madurai", bloodType: "B+", urgency: "High" }
+                    ];
+
+                    let requestHTML = "<ul>";
+                    requests.forEach(req => {
+                        requestHTML += `<li><strong>${req.bloodType}</strong> needed in ${req.location} - Urgency: ${req.urgency}</li>`;
+                    });
+                    requestHTML += "</ul>";
+
+                    document.getElementById("bloodRequests").innerHTML = requestHTML;
+                }
+                
+                document.addEventListener("DOMContentLoaded", fetchBloodRequests);
+            </script>
+        </section>
+
+        <section id="bloodBank" class="content-section">
+            <h2>Find Blood Bank</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Enter location" id="bloodBankInput">
+                <button onclick="searchBloodBank()" class="btn">Find Blood Bank</button>
+            </div>
+            <div id="bloodBankResults">
+                <p>Enter a location to find nearby blood banks.</p>
+            </div>
+            <script>
+                function searchBloodBank() {
+                    const location = document.getElementById("bloodBankInput").value.trim();
+                    if (location === "") {
+                        alert("Please enter a location.");
+                        return;
+                    }
+
+                    const bloodBanks = {
+                        "Chennai": ["Rotary Central TTK Blood Bank", "Government Blood Bank, Rajiv Gandhi Hospital"],
+                        "Coimbatore": ["Coimbatore Medical College Blood Bank", "Ganga Hospital Blood Bank"],
+                        "Madurai": ["Apollo Speciality Hospitals Blood Bank", "Meenakshi Mission Hospital Blood Bank"]
+                    };
+
+                    let resultsHTML = "<ul>";
+                    if (bloodBanks[location]) {
+                        bloodBanks[location].forEach(bank => {
+                            resultsHTML += `<li>${bank}</li>`;
+                        });
+                    } else {
+                        resultsHTML += "<li>No blood banks found in this location.</li>";
+                    }
+                    resultsHTML += "</ul>";
+
+                    document.getElementById("bloodBankResults").innerHTML = resultsHTML;
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="Forgot the passsword .html">Forgot Password?</a>
+            <a href="invite friends.css">Invite Friends</a>
+            <a href="https://myaccount.google.com/people-and-sharing?gar=WzI4MV0&hl=en&utm_source=OGB&utm_medium=act">Post Blood Request</a>
+            <a href="contact us page.html">Contact Us</a>
+        </div>
+        <p>&copy; 2024 - 2025, All Rights Reserved. Designed by linklife.org</p>
+    </footer>
+</body>
+</html>

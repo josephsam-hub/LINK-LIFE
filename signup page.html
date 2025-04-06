@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="icon" href=".vscode/blood-donation.png" width="35" height="35">
+</head>
+<body style="
+  font-family: Arial, sans-serif;
+  background: url('example_img_girl.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+">
+  <div style="
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  ">
+    <h1 style="text-align: center; color: #333;">Sign Up</h1>
+    <form action="signup.php" method="post">
+      <label for="username" style="display: block; margin: 15px 0 5px;">Username:</label>
+      <input type="text" id="username" name="username" required style="
+        width: 100%; padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "/>
+
+      <label for="email" style="display: block; margin: 15px 0 5px;">Email:</label>
+      <input type="email" id="email" name="email" required style="
+        width: 100%; padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "/>
+
+      <label for="password" style="display: block; margin: 15px 0 5px;">Password:</label>
+      <input type="password" id="password" name="password" required style="
+        width: 100%; padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      "/>
+
+      <button type="submit" style="
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      ">Sign Up</button>
+    </form>
+
+    <p style="text-align: center; margin: 15px 0;">or sign up with</p>
+
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #db4437;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" style="height: 20px;"/>
+        Continue with Google
+      </a>
+
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #3b5998;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" style="height: 20px;"/>
+        Continue with Facebook
+      </a>
+
+      <a href="#" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      ">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 20px;"/>
+        Continue with GitHub
+      </a>
+    </div>
+
+    <p style="text-align: center; margin-top: 20px;">
+      <a href="login page  .html" style="color: #28a745; text-decoration: none;">Already have an account? Login</a>
+    </p>
+  </div>
+</body>
+</html>
